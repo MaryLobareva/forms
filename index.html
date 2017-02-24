@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+<body>
+	<div class="form-conteiner">
+	<!-- FORM forget -->
+		<form action="" method="get" class="form form-forget" style="display: none;">
+			<h2 class="form-header">Забули пароль?</h2>
+			<input placeholder="Електронна пошта" type="email" class="email-input" id="email" autofocus required>
+			<label for="email" class="email-label">
+				Введіть електронну пошту, вказану при реєстрації
+			</label>
+			<button type="submit" class="button-submit">
+				Відновити пароль
+				<img src="img/arrow.png" alt="" class="button-img">
+			</button>
+			<a href="" class="link-cabinet">Увійти в обліковий запис</a>
+			<a href="" class="form-logo">
+				<img class="img" src="img/form-logo.png" alt="">
+			</a>
+		</form>
+	<!-- FORM forget END -->
+
+	<!-- FORM login -->
+		<form action="" method="get" class="form form-login" style="">
+			<h2 class="form-header">Увійти в обліковий запис</h2>
+			<input placeholder="Електронна пошта" type="email" class="email-input" autofocus required>
+			<input placeholder="Пароль" type="password" class="pass-input" required>
+
+			<button type="submit" class="button-submit">
+				Увійти
+				<img src="img/arrow.png" alt="" class="button-img">
+			</button>
+
+			<a href="" class="link-cabinet">Створити обліковий запис</a>
+			<a href="" class="form-logo">
+				<img class="img" src="img/form-logo.png" alt="">
+			</a>
+		</form>
+	<!-- FORM login END -->
+
+	<!-- FORM Register  -->
+		<form action="" method="get" class="form form-register" style="display: none;">
+			<h2 class="form-header">Створити обліковий запис</h2>
+			<div class="form-field">
+				<div class="form-error show-error">
+					<span class="form-error-text">Заполните это поле</span>
+				</div>
+				<input placeholder="Ім’я та Прізвище" type="text" class="name-input" autofocus required>
+			</div>
+			<div class="form-field">
+				<div class="form-error show-error">
+					<span class="form-error-text">Заполните это поле</span>
+				</div>
+				<input placeholder="Електронна пошта" type="email" class="email-input" required>
+			</div>
+			<div class="form-field">
+				<div class="form-error show-error">
+					<span class="form-error-text">Заполните это поле</span>
+				</div>
+				<input placeholder="Пароль" type="password" class="pass-input" required>
+			</div>
+			<div class="agree">
+				<div class="checked">
+					<input class="checked-input" type="checkbox" id="agree">
+					<label class="checked-label" for="agree"></label>
+				</div>
+				<span class="agree-text">Я погоджуюсь з умовами використання серсвісу</span>
+			</div>
+
+			<button type="submit" class="button-submit">
+				Реєстрація
+				<img src="img/arrow.png" alt="" class="button-img">
+			</button>
+
+			<a href="" class="link-cabinet">У мене вже є обліковий запис</a>
+			<a href="" class="form-logo">
+				<img class="img" src="img/form-logo.png" alt="">
+			</a>
+		</form>
+	<!-- FORM Register END -->
+
+	</div>
+</body>
+</html>
